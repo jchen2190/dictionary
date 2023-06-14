@@ -1,8 +1,10 @@
 import './App.css';
 import React, { useState } from 'react';
 import useAxios from './hooks/useAxios';
-import SearchInput from './SearchInput';
-import Definition from './Definition';
+import SearchInput from './components/SearchInput';
+import Definition from './components/Definition';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
   const [searchWord, setSearchWord] = useState("");
@@ -21,6 +23,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className="p-3">Dictionary Search</h1>
       <SearchInput handleSubmit={handleSubmit} searchWord={searchWord} setSearchWord={setSearchWord} />
 
       <Definition loading={loading} data={data} word={word} error={error}/>
