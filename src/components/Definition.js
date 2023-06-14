@@ -1,13 +1,13 @@
 function Definition( {loading, data, word, error} ) {
     
     if (!word) {
-        return <h1>Search for a word</h1>
+        return <h1 className="p-3">Search for a word</h1>
     }
     if (loading && !data) {
-        return <h1>Loading...</h1>
+        return <h1 className="p-3">Loading...</h1>
     }
     if (error) {
-        return <h1>An error has occured</h1>
+        return <h1 className="p-3">An error has occured</h1>
     }
 
     return (
@@ -26,7 +26,7 @@ function Definition( {loading, data, word, error} ) {
                         <h2>{meaning.partOfSpeech}</h2>
                         {meaning.definitions.map((obj, index) => (
                             <ul key={index}>
-                                <li>{obj.definition}</li>
+                                <li className="list-unstyled">{obj.definition}</li>
                             </ul>
                         ))}
                     </div>

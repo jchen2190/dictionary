@@ -22,7 +22,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App container">
       <h1 className="p-3">Dictionary Search</h1>
       <SearchInput handleSubmit={handleSubmit} searchWord={searchWord} setSearchWord={setSearchWord} />
 
