@@ -27,3 +27,4 @@ npm start
 Uses React & NodeJS. Takes data from an API at [dictionaryapi](https://dictionaryapi.dev/).
 
 ## Deployment
+Go to [https://jchen2190.github.io/dictionary/](https://jchen2190.github.io/dictionary/)
