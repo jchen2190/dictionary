@@ -1,4 +1,5 @@
 # dictionary
+![screenshot](/public/screencapture.png)
 
 ## General Info
 This dictionary application takes a valid word and returns phonetic, meanings, definition and more.
